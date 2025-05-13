@@ -1,4 +1,4 @@
-# Harman Video Processing Project
+# Video Processing
 
 Real-time camera input processing using C++ and OpenCV — includes color inversion, flipping, and scalable resolution, with live FPS counter.
 
