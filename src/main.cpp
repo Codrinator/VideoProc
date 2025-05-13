@@ -1,5 +1,3 @@
-// File: src/main.cpp
-
 #include <opencv2/opencv.hpp>
 #include <iostream>
 #include <chrono>
@@ -42,13 +40,13 @@ int main() {
         Mat scaled;
         resize(frame, scaled, Size(), scaleFactor, scaleFactor);
 
-        // Optional flip
+        // flip
         Mat flipped = scaled.clone();
         if (flipImage) {
             flip(scaled, flipped, -1);
         }
 
-        // Optional invert
+        // invert
         Mat processed = flipped.clone();
         if (invert) {
             bitwise_not(flipped, processed);
